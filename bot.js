@@ -26,15 +26,7 @@ client.on('ready', () => {
   console.log('')
   console.log('')
 });
- client.on('message', msg => {
-
-    if (msg.content == 'g!join') {
-        if (msg.member.voiceChannel) {
-
-     if (msg.member.voiceChannel.joinable) {
-         msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
-     }
-    }
+ 
 const ytdl = require("ytdl-core");
 const { Client, Util } = require('discord.js');
 const getYoutubeID = require('get-youtube-id');
@@ -45,7 +37,7 @@ const queue = new Map();
  
  
  
-var prefix = "1" 
+var prefix = "البرفكس" 
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
    
@@ -282,25 +274,6 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
    });
  
  
-
  
-client.login(process.env.BOT_TOKEN);
-client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : Diamond Codes`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : Diamond Codes ' `);
-    console.log(`----------------`);
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Special  , `,"http://twitch.tv/S-F")
-client.user.setStatus("online")
  
-});
-}
-})
-client.on('ready', () => { //code bot not leave room voice //Bot Is Online
-    client.channels.get(" ايدي الروم الصوتي").join(); //By: - Mál ,ϻά𝔥𝔪𝔬𝔲𝓓-
- 
-    });
-
 client.login(process.env.BOT_TOKEN);
